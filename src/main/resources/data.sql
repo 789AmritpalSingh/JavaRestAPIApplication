@@ -1,0 +1,1 @@
+insert into details(id,name,birth_date) values (10001,'Amritpal Singh',current_date());
