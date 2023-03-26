@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.versioning;
+package com.amrit.javarestapi.versioning;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

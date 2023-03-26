@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.versioning;
+package com.amrit.javarestapi.versioning;
 
 public class PersonV2 {
     private Name name;

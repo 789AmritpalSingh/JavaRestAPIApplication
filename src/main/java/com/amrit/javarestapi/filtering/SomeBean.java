@@ -1,6 +1,5 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.filtering;
+package com.amrit.javarestapi.filtering;
 import com.fasterxml.jackson.annotation.JsonFilter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @JsonFilter("SomeBeanFilter")
 public class SomeBean {

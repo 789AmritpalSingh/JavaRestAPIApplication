@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.exception;
+package com.amrit.javarestapi.exception;
 import java.time.LocalDateTime;
 
 public class ErrorDetails {

@@ -1,6 +1,6 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.exception;
+package com.amrit.javarestapi.exception;
 
-import com.amrit.javarestapiwithspring_springboot_hibernate.user.UserNotFoundException;
+import com.amrit.javarestapi.user.UserNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;

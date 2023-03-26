@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.helloworld;
+package com.amrit.javarestapi.helloworld;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;

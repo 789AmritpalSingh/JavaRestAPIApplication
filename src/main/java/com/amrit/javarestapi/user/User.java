@@ -1,15 +1,17 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.user;
+package com.amrit.javarestapi.user;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
+import java.util.List;
 
-@Entity(name="details")
+@Entity(name="user_details")
 public class User {
     @Id
     @GeneratedValue
@@ -23,7 +25,7 @@ public class User {
     private LocalDate birthDate;
 
     public User(){}
-    public User(Integer id,String name,LocalDate birthDate){
+    public User(Integer id, String name, LocalDate birthDate){
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
@@ -52,6 +54,18 @@ public class User {
     public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
+
+    public List<Post> getPosts(){
+        return posts;
+    }
+
+    public void setPosts(List<Post>posts){
+        this.posts = posts;
+    }
+
+    @OneToMany(mappedBy = "user") // one to many relationship because one user can have many posts
+    @JsonIgnore
+    private List<Post>posts;
 
     @Override
     public String toString(){

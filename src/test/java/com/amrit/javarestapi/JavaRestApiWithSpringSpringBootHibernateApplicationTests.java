@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate;
+package com.amrit.javarestapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

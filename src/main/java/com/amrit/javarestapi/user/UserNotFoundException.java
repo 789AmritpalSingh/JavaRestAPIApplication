@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.user;
+package com.amrit.javarestapi.user;
 
 
 import org.springframework.http.HttpStatus;

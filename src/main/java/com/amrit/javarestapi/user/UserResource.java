@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.user;
+package com.amrit.javarestapi.user;
 
 import jakarta.validation.Valid;
 import org.springframework.hateoas.EntityModel;
@@ -29,7 +29,7 @@ public class UserResource {
     public EntityModel<User> retrieveUserById(@PathVariable int id){
         User user = service.findById(id);
 
-        if(user==null){
+        if(user ==null){
             throw new UserNotFoundException("id:"+id);
         }
 

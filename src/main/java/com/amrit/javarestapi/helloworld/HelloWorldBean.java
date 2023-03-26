@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.helloworld;
+package com.amrit.javarestapi.helloworld;
 
 public class HelloWorldBean {
     private String message;

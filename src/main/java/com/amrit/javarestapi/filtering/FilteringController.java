@@ -1,4 +1,4 @@
-package com.amrit.javarestapiwithspring_springboot_hibernate.filtering;
+package com.amrit.javarestapi.filtering;
 
 
 import com.fasterxml.jackson.databind.ser.FilterProvider;
@@ -6,10 +6,8 @@ import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
